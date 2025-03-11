@@ -21,7 +21,7 @@ Abra o terminal ou prompt de comando e execute o seguinte comando para clonar o 
 
 bash
 Copy
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/MarcoAndrade12/teste-bloomin/tree/main
 Configurar o Ambiente PHP
 
 XAMPP:
