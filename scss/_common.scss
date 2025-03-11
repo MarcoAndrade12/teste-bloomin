@@ -1,0 +1,411 @@
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+	font-family: $font_2;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font_1;
+	color: $theme-color4;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: normal;
+}
+i{
+	color: $theme-color2
+}
+
+p {
+	font-family: $font_2;
+	color: #000;
+
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+
+.img {
+	max-width: 100%;
+	@include transition(.3s);
+}
+
+.f-left {
+	float: left
+}
+
+.f-right {
+	float: right
+}
+
+.fix {
+	overflow: hidden
+}
+
+.clear {
+	clear: both;
+}
+
+a,
+.button {
+	@include transition(.3s);
+}
+
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a {
+	color: rgb(99, 92, 92);
+}
+
+a:hover {
+	color: #fff;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	text-decoration: none;
+}
+
+a,
+button {
+	color: #000;
+	outline: medium none;
+	text-decoration: none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+	outline: 0
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+input:focus::-moz-placeholder {
+	opacity: 0;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none
+}
+
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+
+.btn2 {
+	background: $theme-color2;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-family: $font_1;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	border-radius: 5px;
+	-moz-user-select: none;
+	font-weight: 400;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: color 0.4s linear;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	&::after {
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 100%;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		background-color: $theme-color;
+		border-radius: 5px;
+		box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+			7px 7px 20px 0px rgba(0, 0, 0, .1),
+			4px 4px 5px 0px rgba(0, 0, 0, .1);
+		transition: all 0.3s ease;
+	}
+
+	&:hover {
+		color: #fff;
+	}
+
+	&:hover:after {
+		left: 0;
+		width: 100%;
+	}
+
+	&:active {
+		top: 2px;
+	}
+}
+
+.btn3 {
+	background: $theme-color2;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-family: $font_1;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	border-radius: 5px;
+	-moz-user-select: none;
+	font-weight: 400;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: color 0.4s linear;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	&::after,
+	&::before {
+		position: absolute;
+		content: "";
+		right: 0;
+		bottom: 0;
+		background: $theme-color2;
+		transition: all 0.3s ease;
+	}
+
+	&::before {
+		height: 0%;
+		width: 2px;
+	}
+
+	&::after {
+		width: 0%;
+		height: 2px;
+	}
+
+	&:hover {
+		color: #fff;
+		font-weight: 500;
+		background: transparent;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	}
+
+	&:hover:before {
+		height: 100%;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+
+	&:active {
+		top: 2px;
+	}
+}
+
+.header-btn {
+	padding: 20px 40px;
+
+	@media #{$lg} {
+		padding: 20px 20px;
+	}
+}
+
+.btn-radius {
+	border-radius: 50%;
+	background: $theme-color2;
+	color: #fff;
+	font-size: 35px;
+	padding: 12px 25px;
+	margin-top: 20px;
+}
+
+/* scrollUp */
+#scrollUp,
+#back-top {
+	background: $theme-color3;
+	height: 50px;
+	width: 50px;
+	right: 31px;
+	bottom: 18px;
+	position: fixed;
+	z-index: 10;
+
+	@media #{$xs} {
+		right: 16px;
+	}
+
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 48px;
+	border: 2px solid transparent;
+	box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+
+	a i {
+		display: block;
+		line-height: 50px;
+		color: #fff;
+
+		&:hover {
+			color: #000;
+			transition: .8s;
+		}
+	}
+
+}
+
+#scrollUp:hover {
+	color: #fff;
+}
+
+/* Sticky*/
+.sticky-bar {
+	left: 0;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+	box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+	z-index: 5;
+	-webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+	animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+	-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+	background: #fff;
+}
+
+/* Sticky end */
+
+
+/*--- Margin & Padding --*/
+
+/*-- Margin Top --*/
+@for $i from 1 through 40 {
+	.mt-#{5 * $i} {
+		margin-top: 5px * $i;
+	}
+}
+
+/*-- Margin Bottom --*/
+@for $i from 1 through 40 {
+	.mb-#{5 * $i} {
+		margin-bottom: 5px *$i;
+	}
+}
+
+/*-- Margin Left --*/
+@for $i from 1 through 40 {
+	.ml-#{5 * $i} {
+		margin-left: 5px * $i;
+	}
+}
+
+/*-- Margin Right --*/
+@for $i from 1 through 40 {
+	.mr-#{5 * $i} {
+		margin-right: 5px *$i;
+	}
+}
+
+/*-- Padding Top --*/
+@for $i from 1 through 40 {
+	.pt-#{5 * $i} {
+		padding-top: 5px *$i;
+	}
+}
+
+.pt-260 {
+	padding-top: 260px;
+}
+
+/*-- Padding Bottom --*/
+@for $i from 1 through 40 {
+	.pb-#{5 * $i} {
+		padding-bottom: 5px *$i;
+	}
+}
+
+/*-- Padding Left --*/
+@for $i from 1 through 40 {
+	.pl-#{5 * $i} {
+		padding-left: 5px *$i;
+	}
+}
+
+/*-- Padding Right --*/
+@for $i from 1 through 40 {
+	.pr-#{5 * $i} {
+		padding-right: 5px *$i;
+	}
+}
+
+.mob-top {
+	position: relative;
+
+	@media #{$laptop} {
+	}
+
+	@media #{$lg} {
+	}
+
+	@media #{$md} {
+	}
+
+	@media #{$sm} {
+		top: 36px;
+	}
+
+	@media #{$xs} {
+		top: 90px;
+	}
+
+}
+
+.invert {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}

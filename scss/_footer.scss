@@ -1,0 +1,196 @@
+.footer-area {
+    background: #242424;
+    padding: 65px 0 0;
+    h2{
+        color: white !important;
+    }
+    .footer-top {
+        border-bottom: 1px solid $theme-color2;
+
+        .single-footer-caption {
+            .footer-logo {
+                position: relative;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .footer-pera {
+                .info1 {
+                    line-height: 1.8;
+                    margin-bottom: 30px;
+                    color: white;
+
+                    @media #{$lg} {
+                        padding-right: 0px;
+                    }
+
+                    @media #{$md} {
+                        padding-right: 0px;
+                    }
+
+                    @media #{$sm} {
+                        padding-right: 0px;
+                    }
+
+                    @media #{$sm} {
+                        padding-right: 0px;
+                    }
+                }
+                .info2 {
+                    line-height: 1.8;
+                    color: rgb(157 157 157);
+
+                    @media #{$lg} {
+                        padding-right: 0px;
+                    }
+
+                    @media #{$md} {
+                        padding-right: 0px;
+                    }
+
+                    @media #{$sm} {
+                        padding-right: 0px;
+                    }
+
+                    @media #{$sm} {
+                        padding-right: 0px;
+                    }
+                }
+            }
+
+            .footer-tittle {
+                & span {
+                    color: white;
+                    font-family: $font_2;
+                    font-size: 18px;
+                    margin-bottom: 38px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+
+                & ul {
+                    & li {
+                        color: white;
+                        margin-bottom: 15px;
+                        text-transform: capitalize;
+
+                        & a {
+                            color: #868c98;
+                            font-weight: 300;
+
+                            &:hover {
+                                color: $theme-color;
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-cap {
+                margin-bottom: 30px;
+
+                span {
+                    color: $theme-color;
+                    font-size: 16px;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                    display: block;
+                }
+           
+
+                p {
+                    color: white;
+                    font-size: 16px;
+                }
+
+                a {
+                    color: rgb(157 157 157);
+                    font-size: 16px;
+                    font-weight: 300;
+                    margin-bottom:20px;
+                    display: block;
+
+                    &:hover {
+                        color: $theme-color2;
+                        padding-left: 5px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    //copy Right 
+    .footer-bottom {
+        // border-top: 1px solid #1c2e4c;
+        padding-bottom: 50px;
+        padding-top: 30px;
+
+        .footer-copy-right {
+            & p {
+                color: white;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 2;
+                margin-bottom: 12px;
+
+                & i {
+                    color: $theme-color;
+                }
+
+                & a {
+                    color: $theme-color;
+
+                }
+            }
+        }
+    }
+}
+
+.socail_links {
+    margin-top: 47px;
+
+    @media #{$mobile_device} {
+        margin-top: 30px;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+
+            a {
+                font-size: 18px;
+                color: #C3B2F0;
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                text-align: center;
+                background: #565656;
+                border-radius: 50%;
+                line-height: 40px !important;
+                margin-right: 7px;
+                color: #fff;
+                line-height: 41px !important;
+
+                &:hover {
+                    color: #fff !important;
+                    background: $theme-color2;
+                }
+            }
+        }
+    }
+}
+
+.mob-center{
+    @media #{$md} {
+        text-align: center;
+    }
+    @media #{$sm} {
+        text-align: center;
+    }
+    @media #{$xs} {
+        text-align: center;
+    }
+}

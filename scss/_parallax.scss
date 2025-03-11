@@ -1,0 +1,74 @@
+.wantToWork-area{
+    background-color: $theme-color2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+    padding: 100px 0;
+    .wantToWork-caption{
+        
+        h2{
+            color: #fff;
+            font-size: 30px;
+            font-weight:700;
+            line-height: 1.5;
+            margin: 0;
+
+            @media #{$md}{
+                font-size: 30px; 
+            }
+            @media #{$md}{
+                font-size: 25px; 
+            }
+            @media #{$xs}{
+                font-size: 20px; 
+                margin-bottom: 20px;
+            }
+        } 
+        & p{
+            color: #fff;
+            font-size: 18px;
+        }
+        a{
+            color: #fff;
+            &:hover{
+                color: $theme-color3;
+            }
+        }
+    }    
+    .wantToWork-btn{
+
+        @media #{$sm}{
+            float: left;
+            margin-top: 30px;
+        }
+        @media #{$xs}{
+            float: left;
+            margin-top: 30px;
+        }
+        @media #{$md}{
+            float: left;
+            margin-top: 30px;
+        }
+    }
+
+    
+}
+
+.contact-button {
+    background-color: white;
+    color: $theme-color4;
+    padding: 15px 15px 15px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.contact-button:hover {
+    background-color: gray;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
