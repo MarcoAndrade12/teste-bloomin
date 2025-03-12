@@ -35,7 +35,7 @@
             <div class="swiper-pagination"></div>
         </div>
 
-        <div class="about">
+        <div class="about mb-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
@@ -48,23 +48,27 @@
                             <p>For over 30 years, commitment to our Core Values has made Edifice Construction Company the ideal building partner for the region's most forward-thinking organizations. Our success comes from a steadfast commitment to the client's vision and a culture of balance, integrity, leadership, and dedication to our customers.</p>
                         </div>
                         <div class="icon-area">
-                            <h2><i class="fas fa-handshake"></i> PROFESSIONAL APPROACH</h2>
-                            <div class="icon-text">
-                                <p>Our approach to building sustainable facilities is based on high professionalism and delivering projects with fairness and excellence.</p>
+                            <div class="icon-single">
+                                <h2><i class="fas fa-handshake"></i> PROFESSIONAL APPROACH</h2>
+                                <div class="icon-text">
+                                    <p>Our approach to building sustainable facilities is based on high professionalism and delivering projects with fairness and excellence.</p>
+                                </div>
                             </div>
-                            <h2><i class="fas fa-users"></i> EXPERT TEAM</h2>
-                            <div class="icon-text">
-                                <p>We employ the best experts in construction that make our every project a reliable one. You can trust each member of Edifice team.</p>
+                            <div class="icon-single">
+                                <h2><i class="fas fa-users"></i> EXPERT TEAM</h2>
+                                <div class="icon-text">
+                                    <p>We employ the best experts in construction that make our every project a reliable one. You can trust each member of Edifice team.</p>
+                                </div>
                             </div>
-
-                            <h2><i class="fas fa-lightbulb"></i> BEST SOLUTIONS</h2>
-                            <div class="icon-text">
-
-                                <p>Our company offers top-notch construction solutions to corporate and individual clients worldwide, while also covering their needs.</p>
+                            <div class="icon-single">
+                                <h2><i class="fas fa-lightbulb"></i> BEST SOLUTIONS</h2>
+                                <div class="icon-text">
+                                    <p>Our company offers top-notch construction solutions to corporate and individual clients worldwide, while also covering their needs.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="col-lg-6 d-flex">
                         <div class="thumb">
                             <img class="img-fluid" src="img/gallery/about.jpg" alt="About Us" title="About Us">
                         </div>
@@ -75,7 +79,7 @@
 
         <?php include 'inc/inc.topics.php' ?>
 
-        <div class="gallery-area">
+        <div class="gallery-area mb-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-12 text-center">
@@ -131,7 +135,7 @@
 
         <?php include 'inc/inc.parallax.php' ?>
 
-        <div class="services-area section-padding">
+        <div class="services-area section-padding mb-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
@@ -242,12 +246,12 @@
             </div>
         </div>
 
-        <section class="pricing">
+        <section class="pricing mb-5">
             <div class="section-title text-center mt-5 mb-5">
                 <h2 class="underline-title">PRICING</h2>
             </div>
             <div class="pricing-container">
-                <div class="pricing-card">
+                <div class="pricing-card col-lg-6 col-md-6 mb-6">
                     <h3>STARTER</h3>
                     <p class="price">$14.89 <span>/monthly</span></p>
                     <ul>
@@ -259,7 +263,7 @@
                     <button>BUY NOW!</button>
                 </div>
 
-                <div class="pricing-card popular">
+                <div class="pricing-card popular col-lg-6 col-md-6 mb-6">
                     <h3>STANDARD</h3>
                     <p class="price">$32.89 <span>/monthly</span></p>
                     <ul>
@@ -272,7 +276,7 @@
                     <div class="popular-badge"><img src="img/gallery/most-popular.png" alt="Most Popular"></div>
                 </div>
 
-                <div class="pricing-card">
+                <div class="pricing-card col-lg-6 col-md-6 mb-6">
                     <h3>BUSINESS</h3>
                     <p class="price">$76.89 <span>/monthly</span></p>
                     <ul>
@@ -284,7 +288,7 @@
                     <button>BUY NOW!</button>
                 </div>
 
-                <div class="pricing-card">
+                <div class="pricing-card col-lg-6 col-md-6 mb-6">
                     <h3>PROFESSIONAL</h3>
                     <p class="price">$89.89 <span>/monthly</span></p>
                     <ul>
@@ -298,7 +302,7 @@
             </div>
         </section>
 
-        <div class="testimonial-area fix">
+        <div class="testimonial-area fix mb-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-9 col-lg-9 col-md-9">
@@ -342,11 +346,11 @@
             </div>
         </div>
 
-        <div class="blog-area section-padding">
+        <div class="blog-area section-padding mb-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
-                    <div class="section-title text-center mt-5 mb-5">
+                        <div class="section-title text-center mt-5 mb-5">
                             <h2 class="underline-title">RECENT NEWS
                             </h2>
                         </div>
@@ -359,7 +363,7 @@
                                 </div>
                                 <div class="blog-cap">
                                     <h3><a href="#">RIBBON “CUT” ТО ОРЕN NEW BUS
-                                    CENTER</a></h3>
+                                            CENTER</a></h3>
                                     <p><span>Jan.20, 2018</span> by Brian Williamson
                                     </p>
                                     <p>Yesterday was a big day for the City of Burlington as a Green Mountain Transit bus literally drove through the ribbon to officially open the new Downtown Transit Center in Vermont. We have finally...</p>
@@ -376,7 +380,7 @@
                                 </div>
                                 <div class="blog-cap">
                                     <h3><a href="#">NEW DOUBLERED RESIDENCE FACILITY
-                                    </a></h3>
+                                        </a></h3>
                                     <p><span>Jan.20, 2018</span> by Brian Williamson
                                     </p>
                                     <p>Last month, our construction company turned over the 110,000-square-foot, 237-bed Fox Run at Fulton housing facility for occupancy. Located adjacent to Marist College, the facility is now home to 237...</p>
@@ -392,8 +396,8 @@
                                 </div>
                                 <div class="blog-cap">
                                     <h3><a href="#">667 CONGRESS STREET PROJECT IS
-                                    FINISHED!</a></h3>
-                                    <p><span>Jan.20,  2018</span> by Brian Williamson
+                                            FINISHED!</a></h3>
+                                    <p><span>Jan.20, 2018</span> by Brian Williamson
                                     </p>
                                     <p>Today we commemorated the completion of steel erection at the 667 Congress Street Apartments project with a traditional topping out ceremony. Despite the dreary weather, spirits were high in Portland, Maine, as...</p>
                                 </div>

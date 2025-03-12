@@ -78,6 +78,7 @@ a:focus,
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
+	color: $theme-color2;
 	text-decoration: none;
 }
 
@@ -267,7 +268,7 @@ hr {
 	background: $theme-color3;
 	height: 50px;
 	width: 50px;
-	right: 31px;
+	right: 17px;
 	bottom: 18px;
 	position: fixed;
 	z-index: 10;

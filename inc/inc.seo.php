@@ -9,9 +9,11 @@ $activePage = basename($_SERVER['REQUEST_URI']);
 # ----------------------------------------
 # Cases
 # ----------------------------------------
-if($activePage == ''){
-  $activePage = 'home';
-}
+$pageId = 'home';
+$title = 'Teste Marco';
+# ----------------------------------------
+# Cases
+# ----------------------------------------
 switch($activePage)
 {
 
@@ -49,7 +51,7 @@ $canonical = $proto.'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
   <!-- Sempre checar se está OK daqui para baixo -->
   
   <!-- Title -->
-  <title><?=$title?><?= $isHome = !isset($isHome) ? ' | Template' : ''; ?></title>
+  <title><?=$title?><?= $isHome = !isset($isHome) ? ' | Bloomin' : ''; ?></title>
   <!-- Charset -->
   <meta charset="UTF-8">
   <!-- Meta Tags -->
@@ -88,7 +90,7 @@ $canonical = $proto.'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
   <!-- Favicon -->
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon">
   <!-- CSS -->
   <?php include 'inc/inc.css.php'; ?>
   <?php include 'inc/inc.config.php'; ?>

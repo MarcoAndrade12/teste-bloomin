@@ -1,6 +1,4 @@
-.section-padding {
-    padding: 65px 0;
-}
+
 
 /* Personaliza os bullets (pontos da paginação) */
 .swiper-pagination-bullet {
@@ -191,7 +189,6 @@
 
 .about-area {
 
-    padding: 90px 0 65px;
 
     @media #{$sm} {
         padding-top: 105px;
@@ -207,10 +204,24 @@
         font-weight: 600;
     }
 
+    
+
+}
+.icon-single{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    padding: 11px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    h2{
+        font-size: 1.5rem;
+    }
 }
 
 .pricing {
-    padding: 50px 20px;
 
 
 .pricing h2 {
@@ -306,19 +317,19 @@ button:hover {
 
     @media #{$xs} {
         top: -40px;
-    right: -30px;
+    right: -20px;
     }
 }
 }
 
 
 .thumb {
-    padding-left: 50px;
     position: relative;
     z-index: 1;
 
     img {
         border-radius: 8px;
+        margin-top: 35px;
     }
 
     span {
@@ -557,9 +568,9 @@ i{
 
             .blog-cap {
                 background: #f3f3f3;
-                padding: 30px 0px 36px 0px;
+                padding: 30px 10px 0px 10px;
                 min-height: 145px;
-                height: 356px;
+                height: 310px;
                 display: flex;
                 flex-direction: column;
                 span{
